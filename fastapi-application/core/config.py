@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from pydantic_settings import BaseSettings
 
 class RunConfig(BaseSettings):
-    host: str = "0.0.0.0"
+    host: str = "127.0.0.1"
     port: int = 8000
 
 class ApiPrefix(BaseModel):
